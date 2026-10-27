@@ -1,0 +1,189 @@
+/* ===================================
+   Kedai Kopi Nusantara — style.css
+   Palet unik: deep teal, citron, dan lilac lembut.
+   Semua pengaturan tampilan ada di file ini.
+   =================================== */
+
+/* 1. Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+  color: #243b3a;
+  background-color: #f1f0e8;
+}
+
+/* 2. Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 22px 8%;
+  background-color: #173b3a;
+  color: #f8f7ef;
+  box-shadow: 0 4px 16px rgba(23, 59, 58, 0.2);
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.7rem;
+  letter-spacing: 0.7px;
+  color: #d8e7a5;
+}
+
+/* 3. Link menu navigasi */
+.menu-link {
+  display: inline-block;
+  margin: 5px 0 5px 18px;
+  color: #f8f7ef;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.menu-link:hover {
+  color: #d8e7a5;
+}
+
+/* 4. Section */
+.section {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 34px;
+  background-color: #fffefa;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(23, 59, 58, 0.08);
+}
+
+/* 5. Judul section */
+.judul {
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  color: #245956;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #c5d77e;
+}
+
+/* 6. Tombol */
+.tombol {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 22px;
+  border-radius: 9px;
+  background-color: #426f68;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(23, 59, 58, 0.12);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tombol:hover {
+  background-color: #173b3a;
+  transform: translateY(-2px);
+}
+
+/* 7. Kotak menu */
+.kotak {
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc(33.333% - 14px);
+  min-width: 210px;
+  margin: 8px 10px 8px 0;
+  padding: 22px;
+  vertical-align: top;
+  background-color: #eef1e7;
+  border: 1px solid #d7dfc8;
+  border-radius: 13px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kotak:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 20px rgba(23, 59, 58, 0.13);
+}
+
+.kotak h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #245956;
+  font-size: 1.2rem;
+}
+
+.kotak p {
+  margin-bottom: 0;
+}
+
+/* 8. Kotak spesial */
+.spesial {
+  background-color: #eee9f5;
+  border: 2px solid #aaa0c8;
+}
+
+.spesial h3 {
+  color: #55486f;
+}
+
+/* 9. Tabel */
+.tabel {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 9px;
+  background-color: #fffefa;
+}
+
+.tabel th,
+.tabel td {
+  padding: 13px 16px;
+  border: 1px solid #dce3d8;
+  text-align: left;
+}
+
+.tabel th {
+  background-color: #245956;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.tabel tr:nth-child(even) td {
+  background-color: #f0f2e9;
+}
+
+/* 10. Footer */
+#footer {
+  margin-top: 38px;
+  padding: 20px;
+  background-color: #173b3a;
+  color: #f8f7ef;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-link {
+    margin: 5px 8px;
+  }
+
+  .section {
+    margin: 18px 12px;
+    padding: 22px;
+  }
+
+  .kotak {
+    width: 100%;
+    margin-right: 0;
+  }
+}
